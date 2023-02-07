@@ -712,7 +712,7 @@
         </div>
       </div>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4" data-recaptcha-site-key="6LdXtF4kAAAAAIGd99MK_oUGm0ywmbiywmkgiibd">
+      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4" data-site-key="6LdXtF4kAAAAAIGd99MK_oUGm0ywmbiywmkgiibd">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -732,6 +732,19 @@
           <div class="error-message"></div>
           <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
+        <html>
+  <head>
+    <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6LdXtF4kAAAAAIGd99MK_oUGm0ywmbiywmkgiibd"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
         <div class="text-center"><button type="submit">Send Message</button></div>
       </form>
 
